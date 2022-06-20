@@ -2,8 +2,6 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 
-
-
 http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     var title = '';
@@ -33,7 +31,7 @@ http.createServer((req, res) => {
 
     res.write(code, "utf8");
     res.end();
-    
+
 }).listen(port, hostname, () => {
     console.log("O servidor está sendo executado en http://127.0.0.1:3000/");
 });
